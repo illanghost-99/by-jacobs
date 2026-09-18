@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boka tid — By Jacobs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger">☰</button>
+      <a class="logo" href="index.html">By Jacobs<span>Stockholm · Sedan 2015</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Hem</a><a href="salon.html">Salong</a><a class="active" href="boka.html">Boka</a><a href="shop.html">Shop</a><a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="nav-actions"><a class="btn btn-gold" href="boka.html">Boka tid</a></div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Hem</a><a href="salon.html">Salong</a><a href="boka.html">Boka</a><a href="shop.html">Shop</a><a href="kontakt.html">Kontakt</a>
+  </div>
+  <div class="container page-hero"><p class="kicker">Bokning</p><h1>Välj behandling, stylist och tid.</h1></div>
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="stepper">
+        <span class="step on">1 · Behandling</span><span class="step on">2 · Stylist</span><span class="step on">3 · Tid</span><span class="step">4 · Bekräfta</span>
+      </div>
+      <div class="book-layout">
+        <div>
+          <h3 style="font-family:var(--serif);font-size:28px;margin-bottom:8px">Behandling</h3>
+          <div class="svc" data-svc="Damklippning" data-price="690"><div><strong>Damklippning</strong><p class="meta">60 min</p></div><span>690 kr</span></div>
+          <div class="svc" data-svc="Herrklippning" data-price="490"><div><strong>Herrklippning</strong><p class="meta">45 min</p></div><span>490 kr</span></div>
+          <div class="svc" data-svc="Tvätt & fön" data-price="550"><div><strong>Tvätt & fön</strong><p class="meta">45 min</p></div><span>550 kr</span></div>
+          <div class="svc" data-svc="Olaplex-behandling" data-price="890"><div><strong>Olaplex-behandling</strong><p class="meta">45–60 min</p></div><span>890 kr</span></div>
+          <p class="meta" style="margin:18px 0 28px">Färg och slingor bokas på 08-40 90 94 64.</p>
+          <h3 style="font-family:var(--serif);font-size:28px;margin-bottom:12px">Stylist</h3>
+          <div class="grid-3" style="margin-bottom:28px">
+            <button class="card" data-stylist="Bashar" style="padding:16px;text-align:left"><strong>Bashar</strong><p class="meta">22 år · 4.9</p></button>
+            <button class="card" data-stylist="Yaqoob" style="padding:16px;text-align:left"><strong>Yaqoob</strong><p class="meta">20 år · 4.9</p></button>
+            <button class="card" data-stylist="Erica" style="padding:16px;text-align:left"><strong>Erica</strong><p class="meta">15 år · 4.9</p></button>
+          </div>
+          <h3 style="font-family:var(--serif);font-size:28px;margin-bottom:12px">September 2026</h3>
+          <div class="cal">
+            <div class="h">M</div><div class="h">T</div><div class="h">O</div><div class="h">T</div><div class="h">F</div><div class="h">L</div><div class="h">S</div>
+            <div class="d off">14</div><div class="d off">15</div><div class="d off">16</div><div class="d off">17</div>
+            <div class="d ok" data-day="Fre 18 sep">18</div>
+            <div class="d ok" data-day="Lör 19 sep">19</div>
+            <div class="d off">20</div>
+            <div class="d ok" data-day="Mån 21 sep">21</div>
+            <div class="d ok" data-day="Tis 22 sep">22</div>
+            <div class="d ok" data-day="Ons 23 sep">23</div>
+            <div class="d ok" data-day="Tor 24 sep">24</div>
+            <div class="d ok" data-day="Fre 25 sep">25</div>
+            <div class="d ok" data-day="Lör 26 sep">26</div>
+            <div class="d off">27</div>
+          </div>
+          <div class="times">
+            <button data-time="11:00">11:00</button><button data-time="12:30">12:30</button><button data-time="14:00">14:00</button>
+            <button data-time="15:30">15:30</button><button data-time="17:00">17:00</button><button data-time="18:00">18:00</button>
+          </div>
+        </div>
+        <aside class="summary">
+          <p class="kicker">Din bokning</p>
+          <h3 style="font-family:var(--serif);font-size:28px;margin-bottom:16px">Översikt</h3>
+          <p>Behandling<br><strong id="sumSvc">Damklippning</strong></p>
+          <p style="margin-top:12px">Stylist<br><strong id="sumStylist">Valfri</strong></p>
+          <p style="margin-top:12px">Datum<br><strong id="sumDate">Välj dag</strong></p>
+          <p style="margin-top:12px">Tid<br><strong id="sumTime">Välj tid</strong></p>
+          <p style="margin:18px 0;font-size:22px" id="sumPrice">690 kr</p>
+          <a class="btn btn-gold" style="width:100%" href="#" onclick="alert('Bekräftelse skickas via SMS + mejl.');return false;">Bekräfta bokning</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <script src="js/app.js"></script>
+</body>
+</html>
