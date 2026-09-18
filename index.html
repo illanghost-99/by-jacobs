@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>By Jacobs — Salong & Professionell Hårvård i Stockholm</title>
+  <meta name="description" content="By Jacobs på Drottninggatan 81. Boka tid hos Bashar, Yaqoob och Erica. Samma pris online och i butik." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburger" aria-label="Meny">☰</button>
+      <a class="logo" href="index.html">By Jacobs<span>Stockholm · Sedan 2015</span></a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Hem</a>
+        <a href="salon.html">Salong</a>
+        <a href="boka.html">Boka</a>
+        <a href="shop.html">Shop</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="icon-btn" href="shop.html" aria-label="Varukorg">Bag</a>
+        <a class="btn btn-gold" href="boka.html">Boka tid</a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Hem</a><a href="salon.html">Salong</a><a href="boka.html">Boka</a><a href="shop.html">Shop</a><a href="kontakt.html">Kontakt</a>
+  </div>
+  <section class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2000&q=80" alt="Glansigt hår" />
+    <div class="hero-content">
+      <p class="eyebrow">Drottninggatan 81 · 4.9 på Bokadirekt</p>
+      <h1>Vi tar hand om dig.</h1>
+      <p>En familjesalong i hjärtat av Stockholm – och en e-handel med samma pris i butik som online.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="boka.html">Boka tid</a>
+        <a class="btn btn-white" href="shop.html">Shoppa produkter</a>
+      </div>
+      <div class="trust"><span>Fri frakt över 700 kr</span><span>Click & Collect</span><span>Klarna</span><span>1 360+ omdömen</span></div>
+    </div>
+  </section>
+  <div class="brands"><div class="container brand-row">
+    <a href="shop.html">Kérastase</a><a href="shop.html">Olaplex</a><a href="shop.html">K18</a><a href="shop.html">Redken</a><a href="shop.html">Kevin Murphy</a><a href="shop.html">Nioxin</a>
+  </div></div>
+  <section>
+    <div class="container">
+      <div class="section-head"><div><p class="kicker">Behandlingar</p><h2>Det vi gör bäst i stolen.</h2></div><a class="btn btn-ghost" href="boka.html">Se prislista</a></div>
+      <div class="grid-3">
+        <article class="card treat"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="Klippning" /><div class="card-body"><h3>Klippning</h3><p class="meta">Dam · Herr · Barn</p><a href="boka.html">Boka →</a></div></article>
+        <article class="card treat"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="Färg" /><div class="card-body"><h3>Färg & slingor</h3><p class="meta">Bokas via telefon</p><a href="kontakt.html">Ring oss →</a></div></article>
+        <article class="card treat"><img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=900&q=80" alt="Olaplex" /><div class="card-body"><h3>Olaplex-behandling</h3><p class="meta">Reparation</p><a href="boka.html">Boka →</a></div></article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container grid-3">
+      <article class="quote"><div class="stars">★★★★★</div><p>Stammis sedan 2015. Noggrant och vänligt.</p><div class="who">Jessica S. · till Yaqoob</div></article>
+      <article class="quote"><div class="stars">★★★★★</div><p>Trevligt bemötande och riktigt snygg färg.</p><div class="who">Osila S. · till Bashar</div></article>
+      <article class="quote"><div class="stars">★★★★★</div><p>Alltid nöjd. Bra service varje gång.</p><div class="who">Hiwi K. · 4.9 / 1 360+</div></article>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="news">
+        <div><p class="kicker" style="color:var(--gold-soft)">Medlemsklubb</p><h2>Tips, släpp och koder.</h2></div>
+        <form class="news-form" onsubmit="event.preventDefault();this.querySelector('input').value='Tack – du är med.';">
+          <input type="email" required placeholder="Din e-post" />
+          <button class="btn btn-gold" type="submit">Prenumerera</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="legal"><span>© 2026 By Jacobs Hair & Beauty AB</span><span>Drottninggatan 81, Stockholm</span></div>
+    </div>
+  </footer>
+  <div class="fab">
+    <div class="chat" id="chat">
+      <div class="chat-h">By Jacobs Guide</div>
+      <div class="chat-b" id="chatBody"><div class="bubble">Hej. Berätta vad håret behöver – volym, reparation, färgvård.</div></div>
+      <div class="chat-f"><input id="chatInput" placeholder="Skriv en fråga…" /><button class="btn btn-gold" id="chatSend">Skicka</button></div>
+    </div>
+    <button class="fab-btn" id="fabBtn" aria-label="Chatt">✦</button>
+  </div>
+  <div class="cookie" id="cookie">
+    <p style="margin-bottom:12px">Vi använder cookies för en snabbare sajt.</p>
+    <button class="btn btn-gold" id="acceptCookies">Godkänn</button>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
